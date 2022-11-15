@@ -1,0 +1,46 @@
+$xlarge-desktop: 1500px;
+$large-desktop: 1400px;
+$desktop: 1200px;
+$laptop: 991px;
+$tablet: 768px;
+$mobile: 576px;
+
+@mixin xlarge-desktop {
+  @media (max-width: #{$xlarge-desktop}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (max-width: #{$large-desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+// Use Breakpoints
+// @include tablet {
+//   body {
+//     background-color: red;
+//   }
+// }
